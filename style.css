@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('Inter-Regular.woff2') format('woff2')
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;    
+}  
+
+:root {
+    background: #fff;
+    color: #222;
+    font-family: "Inter", "Inter UI", "Inter-Regular", -apple-system, "Open Sans", "Helvetica Neue", sans-serif, "Sans Serif";
+    font-size: 18px;
+    line-height:30px;    
+}
+
+@media (prefers-color-scheme: dark) { 
+    :root {
+        background: #222;
+        color: #eee;
+    }
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background: 0 0;
+    text-decoration: none;
+    outline: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    color: inherit;
+    border: none;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing:antialiased;   
+}
+
+body {
+    padding:10vw;              
+}
+
+
+body strong { 
+  font-weight: bold;
+}
+
+body em {
+  font-style: italic;
+}
+
+@media (min-width: 1000px) {
+    body {
+        padding:50px        
+    }
+}
+
+
+main {
+    max-width:60ch;
+    margin: auto;        
+}
+
+p:not(:last-child) {
+    margin-bottom:30px
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 22px;  
+    font-weight: 500;  
+}
+
+a {
+    text-decoration: note;
+    border-bottom: 1px #444 dotted;
+}
+
+a:hover {
+    opacity: .5
+}
+
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  background-color:#ccc;
+  height: 1px;
+}
+
+ul {
+  list-style-type: circle;
+  list-style-position: outside;
+}
+
+img { 
+    display: block; 
+    height: auto; 
+    margin: 0 auto; 
+    max-width: 100%; 
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 12fr 12fr;
+    grid-template-rows: 4fr; 
+    grid-gap: 0.5rem; 
+}
+
+.wrapper a {
+    text-decoration: none;
+}
+
+
+.box {
+    padding: 10px;
+    padding-bottom: 10px;
+}
